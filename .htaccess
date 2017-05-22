@@ -1,0 +1,9 @@
+RewriteEngine on
+
+# redirect from www to non-www.*
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1%{REQUEST_URI} [R=301,QSA,NC,L]
+
+# added for removing index.php
+RewriteCond $1 !^(index\.php|uploads|frontend|powercms|plugins|images|css|scripts|robots\.txt|urllist\.txt|sitemap\.html|ror\.xml|\.swf)
+RewriteRule ^(.*)$ index.php/$1 [L]

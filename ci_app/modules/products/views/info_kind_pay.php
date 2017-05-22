@@ -1,0 +1,1 @@
+<p><?php echo __('IP_contact_message'); ?></p>

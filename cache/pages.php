@@ -1,0 +1,26 @@
+<?php $ip_pages = array (
+  '/huong-dan-mua-hang.html' => 
+  array (
+    'id' => '14',
+    'title' => 'Hướng dẫn mua hàng',
+    'uri' => '/huong-dan-mua-hang.html',
+    'content' => '<p>Hướng dẫn mua h&agrave;ng</p>',
+    'created_date' => '2015-12-15 21:44:45',
+    'viewed' => '374',
+    'summary' => 'Hướng dẫn mua hàng',
+    'meta_title' => '',
+    'meta_keywords' => '',
+    'meta_description' => '',
+    'tags' => '',
+    'status' => '1',
+    'lang' => 'vi',
+    'creator' => '1',
+    'editor' => '1',
+    'slug' => 'huong-dan-mua-hang.html',
+    'slug_id' => '1577',
+    'creator_username' => 'admin',
+    'creator_fullname' => 'Administrator',
+    'editor_username' => 'admin',
+    'editor_fullname' => 'Administrator',
+  ),
+)?>

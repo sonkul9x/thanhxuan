@@ -1,0 +1,492 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Shopy Mart - Responsive E-commerce Template</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="css/style.css" type="text/css" rel="stylesheet" media="screen" /> <!-- General style -->
+<link href="css/prettyPhoto.css" type="text/css" rel="stylesheet" media="screen"><!-- prettyPhoto -->
+<link href="css/tipsy.css" type="text/css" rel="stylesheet" media="screen"><!--tipsy-->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Arvo:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+
+<script type="text/javascript" src="js/css3-mediaqueries.js"></script><!--mediaqueries-->
+<script type="text/javascript" src="js/modernizr-1.7.min.js"></script><!--modernizr-->
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script><!-- prettyPhoto -->
+<script type="text/javascript" src="js/jquery.tipsy.js"></script><!--tooltip-->
+<script type="text/javascript" src="js/jquery-hover-effect.js"></script><!--Image Hover Effect-->
+<script type="text/javascript" src="js/jquery.hoverIntent.minified.js"></script><!--menu-->
+<script type="text/javascript" src="js/jquery.dcmegamenu.1.3.3.js"></script><!--menu-->
+<script type="text/javascript" src="js/jquery.quovolver.js"></script><!--blockquote-->
+<script type="text/javascript" src="js/custom.js"></script><!--custom-->
+<!--MENU-->
+<script type="text/javascript">
+$(document).ready(function($){
+	$('#mega-menu-3').dcMegaMenu({
+		rowItems: '2',
+		speed: 'fast',
+		effect: 'fade'
+	});
+});
+</script>
+</head>
+
+<body>
+	<div id="page_wrap">
+    	<header>
+        	<div id="top">
+            	<span>Hello! default welcome message</span>
+                <div>
+                	<p>Language:
+                	<label>
+                        <select>
+                            <option selected>English </option>
+                            <option>German</option>
+                            <option>Spanish</option>
+                        </select>
+                    </label>​
+                    </p>
+                    <p>Currency:
+                	<label>
+                        <select>
+                            <option selected>US Dollar - USD </option>
+                            <option>Euro - EUR</option>
+                            <option>British Pound - GBP</option>
+                        </select>
+                    </label>​
+                    </p>
+                </div>
+            </div><!--end:top-->
+            <div id="top2">
+            	<ul class="myaccountmenu">
+                	<li><a href="account.html" class="first">My Account</a></li>
+                    <li><a href="wishlist.html">My Wishlist</a></li>
+                    <li><a href="cart.html">My Cart</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                    <li class="login"><a href="#login-box" class="last login-window">Login</a></li>
+                </ul>
+                <div id="login-box" class="login-popup">
+                <a href="#" class="close"><img src="images/process-stop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+                  <form method="post" class="signin" action="#">
+                        <fieldset class="textbox">
+                        <label class="username">
+                        <span>Username or email</span>
+                        <input id="username" name="username" value="" type="text" autocomplete="on" placeholder="Username">
+                        </label>
+                        <label class="password">
+                        <span>Password</span>
+                        <input id="password" name="password" value="" type="password" placeholder="Password">
+                        </label>
+                        <button class="submit button" type="button">Sign in</button>
+                        <p>
+                        <a class="forgot" href="#">Forgot your password?</a> / <a class="register" href="register.html">Create an Account</a>
+                        </p>
+                        </fieldset>
+                  </form>
+       			</div>
+                <div id="demo-header">
+                    <a id="cart-link" href="#cart" title="Cart">2 Items - $295.00</a>
+                    <div id="cart-panel">
+                    	<div class="item-cart">
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td class="image"><a href="product.html"><img width="60" height="60" src="images/products/product-thumb-1.jpg" alt="product" title="product"></a></td>
+                              <td class="name"><a href="product.html">Women's Saucony</a></td>
+                              <td class="quantity">x&nbsp;1</td>
+                              <td class="total">$59.95</td>
+                              <td class="remove"><i class="icon-remove"></i></td>
+                            </tr>
+                            <tr>
+                              <td class="image"><a href="product.html"><img width="60" height="60" src="images/products/product-thumb-1.jpg" alt="product" title="product"></a></td>
+                              <td class="name"><a href="product.html">Women's Saucony</a></td>
+                              <td class="quantity">x&nbsp;1</td>
+                              <td class="total">$59.95</td>
+                              <td class="remove"><i class="icon-remove "></i></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td class="textright"><b>Sub-Total:</b></td>
+                              <td class="textright">$119.90</td>
+                            </tr>
+                            <tr>
+                              <td class="textright"><b>Eco Tax (-2.00):</b></td>
+                              <td class="textright">$2.00</td>
+                            </tr>
+                            <tr>
+                              <td class="textright"><b>VAT (10%):</b></td>
+                              <td class="textright">$32.00</td>
+                            </tr>
+                            <tr>
+                              <td class="textright"><b>Total:</b></td>
+                              <td class="textright">$151.90</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <div class="buttoncart">
+                          <a href="cart.html">View Cart</a>
+                          <a href="checkout.html">Checkout</a>
+                        </div>
+                    </div>
+                    </div><!-- /login-panel -->
+            	</div><!-- /demoheader -->	
+            </div><!--end:top2-->
+            <div id="top3">
+            	<h1 class="logo"><a href="index-2.html">Shopy Mart</a></h1>
+                <form action="#" method="post" class="search_bar">
+                    <fieldset>
+                      <input type="text" name="search" class="search" value="Enter a keywords..." onBlur="if (this.value == ''){this.value = 'Enter a keywords...'; }" onFocus="if (this.value== 'Enter a keywords...') {this.value = ''; }" />
+                      <input type="submit" name="submit" value="Search" class="submit" />
+                    </fieldset>
+                </form>
+            </div><!--end:top3-->
+        </header>
+        <div id="container">
+        	<nav>  
+                <ul id="mega-menu-3" class="mega-menu">
+                    <li class="first"><a href="index-2.html">Home</a></li>
+                    <li><a href="clothing.html">Clothing</a>
+                        <ul>
+                            <li><a href="clothing.html">Women's Clothing</a>
+                            	<ul class="menu-1">
+                                	<li><a href="http://html5awesome.com/themeforest/shopymart/newarrival.html">New Arrival</a></li>
+                                    <li><a href="http://html5awesome.com/themeforest/shopymart/sale.html">On Sale</a></li>
+                                    <li><a href="brands.html">Brands</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">Coats</a></li>
+                                    <li><a href="#">Dresses &amp; Skirts</a></li>
+                                    <li><a href="#">Hoodies &amp; Sweatshirts</a></li>
+                                    <li><a href="#">Jackets</a></li>
+                                    <li><a href="#">Pants &amp; Shorts</a></li>
+                                    <li><a href="#">Jeans</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="http://html5awesome.com/themeforest/shopymart/clothing">Men's Clothing</a>
+                            	<ul class="menu-1">
+                                	<li><a href="http://html5awesome.com/themeforest/shopymart/newarrival.html">New Arrival</a></li>
+                                    <li><a href="http://html5awesome.com/themeforest/shopymart/sale.html">On Sale</a></li>
+                                    <li><a href="brands.html">Brands</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">Coats</a></li>
+                                    <li><a href="#">T-Shirts</a></li>
+                                    <li><a href="#">Hoodies &amp; Sweatshirts</a></li>
+                                    <li><a href="#">Jackets</a></li>
+                                    <li><a href="#">Pants &amp; Shorts</a></li>
+                                    <li><a href="#">Jeans</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                <li><a href="shoes.html">Shoes</a></li>
+                <li><a href="brands.html">Brands</a>
+                	<ul>
+                    	<li><a href="#">Lee</a></li>
+                    	<li><a href="#">Jag</a></li>
+                        <li><a href="#">Hangten</a></li>
+                        <li><a href="#">Addidas</a></li>
+                        <li><a href="#">Nike</a></li>
+                        <li><a href="#">Levi's</a></li>
+                	</ul>
+                </li>
+                <li><a href="product.html">Products</a>
+                	<ul>
+                    	<li>
+                        <ul class="menu-1">
+                            <li><a href="http://html5awesome.com/themeforest/shopymart/newarrival.html">New Arrival</a></li>
+                            <li><a href="http://html5awesome.com/themeforest/shopymart/sale.html">On Sale</a></li>
+                        	<li><a href="brands.html">Brands</a></li>
+                        </ul>
+                        <ul>
+                        	<li><a href="#">Women's Clothing</a></li>
+                            <li><a href="#">Mens Clothing</a></li>
+                            <li><a href="#">Shoes</a></li>
+                            <li><a href="#">Accessories</a></li>
+                            <li><a href="#">Product 1</a></li>
+                            <li><a href="#">Product 2</a></li>
+                        </ul>
+                        </li>
+                        <li>
+                        	<ul>
+                            	<li><img src="images/products/product-menu.jpg" alt=""></li>
+                            </ul>
+                         </li>
+                        </ul>
+                </li>
+                <li><a href="blog.html" class="current">Blog</a>
+                	<ul>
+                    	<li><a href="single.html">Single</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Features</a>
+                	<ul>
+                    	<li><a href="index-2.html">Camera Slider</a></li>
+                        <li><a href="index2.html">Item Slider</a></li>
+                        <li><a href="typography.html">Typography</a></li>
+                        <li><a href="button.html">Button</a></li>
+                        <li><a href="column.html">Column</a></li>
+                        <li><a href="list.html">Ordered &amp; Unordered List</a></li>
+                        <li><a href="404page.html">404 Error Page</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav><!--end:grey-->
+            <div class="content-wrap">
+            	<div style="clear:both; display:block; height:20px"></div>
+                <div id="intro">
+                	<div class="one-fourth serv first">
+                    	<img src="images/service-1.png" alt="">
+                        <h3><a href="#">Free Shipping</a></h3>
+                        <span>Available</span>
+                    </div>
+                    <div class="one-fourth serv">
+                    	<img src="images/service-2.png" alt="">
+                        <h3><a href="#">30 Days Return</a></h3>
+                        <span>Easy Return</span>
+                    </div>
+                    <div class="one-fourth serv">
+                    	<img src="images/service-3.png" alt="">
+                        <h3><a href="#">Call Us</a></h3>
+                        <span>(63) 912 3456</span>
+                    </div>
+                    <div class="one-fourth serv">
+                    	<img src="images/service-4.png" alt="">
+                        <h3><a href="#">Secured</a></h3>
+                        <span>Checkout</span>
+                    </div>
+                </div>
+                <div class="container-2">
+                	<section class="content">
+                    	<div class="entry da-thumbs">
+                        	<div class="blog-entry">
+                            	<div class="meta">
+                                	<span><small class="post-pic"></small><strong>25</strong><small>Feb.<br>2013</small></span>
+                            	</div>
+                            	<img src="images/blog/blog-1-1.jpg" alt="">
+                                <article class="da-animate da-slideFromRight" style="display: block;">
+                                    <p>
+                                    <a href="images/preview/work_1_l.jpg" rel="prettyPhoto[gallery1]" class="zoom tip" title="Zoom" ></a></p>
+                                 </article>
+                            </div>
+                            <h2><a href="single.html">Get the latest mobile iPhone 5</a></h2>
+                            <ul>
+                                <li class="post">Posted by: <a href="#">Admin</a></li>
+                                <li class="category">Category: <a href="#">Inpirational</a></li>
+                                <li class="comment">Comment: <a href="#">4</a></li>
+                            </ul>
+                            <p>Suspendisse rhoncus facilisis adipiscing. Vestibulum eu ligula lorem. Vivamus orci sem, consectetur ut vestibulum a, semper ac dui. Aenean tellus nisl, commodo eu aliquet ut, pulvinar ut sapien. Proin vulputate aliquam mi nec hendrerit. Sed fermentum velit vel ipsum bibendum tristique. Ut sem lacus, porttitor et aliquam eget, iaculis id lacus. Praesent sollicitudin, nibh nec mattis lobortis. </p>
+                            <span><a href="#">Learn more</a></span>
+                        </div><!--entry-->
+                        <div class="entry da-thumbs">
+                        	<div class="blog-entry">
+                            	<div class="meta">
+                                	<span><small class="post-pic"></small><strong>24</strong><small>Feb.<br>2013</small></span>
+                            	</div>
+                            	<img src="images/blog/blog-1-2.jpg" alt="">
+                                <article class="da-animate da-slideFromRight" style="display: block;">
+                                    <p>
+                                    <a href="images/preview/work_1_l.jpg" rel="prettyPhoto[gallery1]" class="zoom tip" title="Zoom" ></a></p>
+                                 </article>
+                            </div>
+                            <h2><a href="single.html">Get ready for the big events!</a></h2>
+                            <ul>
+                                <li class="post">Posted by: <a href="#">Admin</a></li>
+                                <li class="category">Category: <a href="#">Inpirational</a></li>
+                                <li class="comment">Comment: <a href="#">4</a></li>
+                            </ul>
+                            <p>Suspendisse rhoncus facilisis adipiscing. Vestibulum eu ligula lorem. Vivamus orci sem, consectetur ut vestibulum a, semper ac dui. Aenean tellus nisl, commodo eu aliquet ut, pulvinar ut sapien. Proin vulputate aliquam mi nec hendrerit. Sed fermentum velit vel ipsum bibendum tristique. Ut sem lacus, porttitor et aliquam eget, iaculis id lacus. Praesent sollicitudin, nibh nec mattis lobortis. </p>
+                            <span><a href="#">Learn more</a></span>
+                        </div><!--entry-->
+                        <div class="entry">
+                            <div class="meta">
+                                <span><small class="post-video"></small><strong>07</strong><small>Jan<br>2013</small></span>
+                            </div>
+                            <div class="video-container">
+                                <iframe src="http://player.vimeo.com/video/29193046?title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                            </div>
+                            <h2><a href="single.html">Vimeo Video Post</a></h2>
+                            <ul>
+                                <li class="post">Posted by: <a href="#">Admin</a></li>
+                                <li class="category">Category: <a href="#">Inpirational</a></li>
+                                <li class="comment">Comment: <a href="#">4</a></li>
+                            </ul>
+                            <p>Suspendisse rhoncus facilisis adipiscing. Vestibulum eu ligula lorem. Vivamus orci sem, consectetur ut vestibulum a, semper ac dui. Aenean tellus nisl, commodo eu aliquet ut, pulvinar ut sapien. Proin vulputate aliquam mi nec hendrerit. Sed fermentum velit vel ipsum bibendum tristique. Ut sem lacus, porttitor et aliquam eget, iaculis id lacus. Praesent sollicitudin, nibh nec mattis lobortis, dui massa eleifend magna, eget consequat risus felis dignissim ligula. </p>
+                            <span><a href="#">Learn more</a></span>
+                        </div><!--entry-->
+                        <ul id="pagination">
+                            <li><a class="current" href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">next</a></li>
+                        </ul>
+                    </section>
+                    <aside class="sidebar">
+                    	<div class="side">
+                        	<h4>Category</h4>
+                            <ul class="cat">
+                            	<li><a href="#">Women's Clothes</a></li>
+                                <li><a href="#">Men's Clothes</a></li>
+                                <li><a href="#">Accessories</a></li>
+                                <li><a href="#">Men's Shoes</a></li>
+                                <li><a href="#">Women's Shoes</a></li>
+                            </ul>
+                        </div><!--end:side-->
+                    	<div class="side">
+                        	<h4>Bestsellers</h4>
+                            <div class="entry">
+                            	<div class="da-thumbs">
+                                	<div>
+                                    	<img src="images/products/thumb-1.jpg" alt="">
+                                        <article class="da-animate da-slideFromRight" style="display: block;">
+                                            <p><a href="product-detail.html" class="link"></a></p>
+                                        </article>
+                                    </div>
+                                </div>
+                                <h3><a href="product-detail.html">Athletic Shoes</a></h3>
+                                <small>$59.95</small>
+                            </div>
+                            <div class="entry">
+                            	<div class="da-thumbs">
+                                	<div>
+                                    	<img src="images/products/thumb-2.jpg" alt="">
+                                        <article class="da-animate da-slideFromRight" style="display: block;">
+                                            <p><a href="product-detail.html" class="link"></a></p>
+                                        </article>
+                                    </div>
+                                </div>
+                                <h3><a href="product-detail.html">Athletic Shoes</a></h3>
+                                <small>$59.95</small>
+                            </div>
+                        </div><!--end:side-->
+                        <div class="side">
+                        	<h4>Recent Blog</h4>
+                            <div class="entry">
+                            	<div class="da-thumbs">
+                                	<div>
+                                    	<img src="images/products/thumb-1.jpg" alt="">
+                                        <article class="da-animate da-slideFromRight" style="display: block;">
+                                            <p><a href="blog.html" class="link"></a></p>
+                                        </article>
+                                    </div>
+                                </div>
+                                <h3><a href="blog.html">Pellentesque habitant morbi..</a></h3>
+                                <span><a href="blog.html">Posted on:02/28/13</a></span>
+                            </div>
+                            <div class="entry">
+                            	<div class="da-thumbs">
+                                	<div>
+                                    	<img src="images/products/thumb-2.jpg" alt="">
+                                        <article class="da-animate da-slideFromRight" style="display: block;">
+                                            <p><a href="blog.html" class="link"></a></p>
+                                        </article>
+                                    </div>
+                                </div>
+                                <h3><a href="blog.html">Pellentesque habitant morbi ...</a></h3>
+                                <span><a href="blog.html">Posted on:02/28/13</a></span>
+                            </div>
+                        </div><!--end:side-->
+                        <div class="side">
+                        	<h4>Our Customer Love Us!</h4>
+                            <ul class="fade">					
+                                <li class="feed">Easy shopping experience! Pricing is attractive! Lots of styles to choose from and great pics!<br>
+                                	<small><a href="#">&mdash; Louie Jie Mahusay</a></small>
+                                </li>
+                                <li class="feed">Easy shopping experience! Pricing is attractive! Lots of styles to choose from and great pics!<br>
+                                	<small><a href="#">&mdash; Louie Jie Mahusay</a></small>
+                                </li>
+                                <li class="feed">Easy shopping experience! Pricing is attractive! Lots of styles to choose from and great pics!<br>
+									<small><a href="#">&mdash; Louie Jie Mahusay</a></small>	
+                                </li>
+                                <li class="feed">Easy shopping experience! Pricing is attractive! Lots of styles to choose from and great pics!<br>
+                                	<small><a href="#">&mdash; Louie Jie Mahusay</a></small>
+								</li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div><!--end:container-2-->
+                <div class="container-2">
+                	<div style="clear:both; display:block; height:40px"></div>
+                    <div class="ship">
+                    	<a href="#"><img src="images/service-1.png" alt=""></a>
+                        <h4><a href="#">Free Shipping</a></h4>
+                        <span>On order over $300</span>
+                    </div>
+                    <div class="subs">
+                    	<h4>Sign up for our Newsletter</h4>
+                    	<form action="#" method="post" class="subscribes">
+                            <fieldset>
+                              <input type="text" name="subscribe" class="subscribe" value="Subscribe" onBlur="if (this.value == ''){this.value = 'Subscribe'; }" onFocus="if (this.value== 'Subscribe') {this.value = ''; }" />
+                              <input type="submit" name="submit" value="Submit" class="submit" />
+                            </fieldset>
+                        </form>
+                    </div>
+                </div><!--end:container-2-->
+            </div><!--end:content-wrap-->
+            <footer>
+            	<div class="content-wrap">
+                	<div class="one-fourth first">
+                    	<h4>Information</h4>
+                        <ul>
+                        	<li><a href="http://html5awesome.com/themeforest/shopymart/about.html">About Us</a></li>
+                            <li><a href="#">Delivery Information</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms &amp; Condition</a></li>
+                        </ul>
+                    </div>
+                    <div class="one-fourth">
+                    	<h4>Customer Services</h4>
+                        <ul>
+                        	<li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="#">Shipping Returns</a></li>
+                            <li><a href="#">Secure Shopping</a></li>
+                        </ul>
+                    </div>
+                    <div class="one-fourth">
+                    	<h4>Extras</h4>
+                        <ul>
+                        	<li><a href="brands.html">Brands</a></li>
+                            <li><a href="#">Gift Vouchers</a></li>
+                            <li><a href="#">Affiliates</a></li>
+                            <li><a href="#">Special</a></li>
+                        </ul>
+                    </div>
+                    <div class="one-fourth">
+                    	<h4>My Account</h4>
+                        <ul>
+                        	<li><a href="account.html">My Account</a></li>
+                            <li><a href="#">Order History</a></li>
+                            <li><a href="wishlist.html">Wishlist</a></li>
+                            <li><a href="#">Newsletter</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content-wrap">
+                	<div style="clear:both; display:block;" class="social-wrap"></div>
+                	<ul class="social">
+                    	<li><a href="#" class="tip" title="Facebook"><img src="images/social-icon-facebook.png" alt="Facebook"></a></li>
+                        <li><a href="#" class="tip" title="Dribbble"><img src="images/social-icon-dribbble.png" alt="Dribbble"></a></li>
+                        <li><a href="#" class="tip" title="Flickr"><img src="images/social-icon-flickr.png" alt="Flickr"></a></li>
+                        <li><a href="#" class="tip" title="Pinterest"><img src="images/social-icon-pinterest.png" alt="Pinterest"></a></li>
+                        <li><a href="#" class="tip" title="Twitter"><img src="images/social-icon-twitter.png" alt="Twitter"></a></li>
+                        <li><a href="#" class="tip" title="RSS"><img src="images/social-icon-rss.png" alt="RSS"></a></li>
+                    </ul>
+                    <ul class="payment">
+                    	<li><a href="#" class="tip" title="Paypal"><img src="images/payment-icon-paypal.png" alt="Paypal"></a></li>
+                        <li><a href="#" class="tip" title="American Express"><img src="images/payment-icon-ae.png" alt="American Express"></a></li>
+                        <li><a href="#" class="tip" title="Discover"><img src="images/payment-icon-discover.png" alt="Discover"></a></li>
+                        <li><a href="#" class="tip" title="Master Card"><img src="images/payment-icon-mastercard.png" alt="Master Card"></a></li>
+                        <li><a href="#" class="tip" title="Visa"><img src="images/payment-icon-visa.png" alt="Visa"></a></li>
+                    </ul>
+                    <p style="clear:both; display:block;">&copy; 2013 <a href="index-2.html">Shopymart</a>, All Rights Reserved. Designed by: <a href="#">louiejiemahusay</a></p>
+                </div>
+            </footer>
+        </div><!--end:container-->
+    </div><!--end:page_wrap-->
+</body>
+</html>
