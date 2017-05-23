@@ -1,5 +1,5 @@
 
->>> FOUND ERROR at 2017-05-22 16:53:17 <<<
+>>> FOUND ERROR at 2017-05-23 14:29:52 <<<
 		Heading: 404 Page Not Found
 		Message: 'The page you requested was not found.'
 		Error code: error_404
@@ -18,44 +18,43 @@
   'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php',
   'PHPRC' => '\\xampp\\php',
   'TMP' => '\\xampp\\tmp',
-  'HTTP_HOST' => 'tintucs.com',
+  'HTTP_HOST' => 'localhost',
   'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0',
-  'HTTP_ACCEPT' => '*/*',
+  'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
   'HTTP_ACCEPT_LANGUAGE' => 'vi,en;q=0.5',
   'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
-  'HTTP_REFERER' => 'http://tintucs.com/',
-  'HTTP_COOKIE' => 'PHPSESSID=glkj3ggt1105c5r2lqr9irr6u6; ci_session=a%3A4%3A%7Bs%3A10%3A%22session_id%22%3Bs%3A32%3A%22773d0b84bfcc89a1daf7b130ae282985%22%3Bs%3A10%3A%22ip_address%22%3Bs%3A9%3A%22127.0.0.1%22%3Bs%3A10%3A%22user_agent%22%3Bs%3A73%3A%22Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+rv%3A53.0%29+Gecko%2F20100101+Firefox%2F53.0%22%3Bs%3A13%3A%22last_activity%22%3Bi%3A1495446601%3B%7Dd4481874fccbb79cecb12ddb8a04316e; _ga=GA1.2.13262570.1495437324; _gid=GA1.2.1224584742.1495446789; _gat=1',
+  'HTTP_COOKIE' => 'PHPSESSID=ljofjaudk90di1uo89rjohmkh0; ci_session=a%3A5%3A%7Bs%3A10%3A%22session_id%22%3Bs%3A32%3A%221b8a8a913cf6bceade54289791bd9162%22%3Bs%3A10%3A%22ip_address%22%3Bs%3A3%3A%22%3A%3A1%22%3Bs%3A10%3A%22user_agent%22%3Bs%3A73%3A%22Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+rv%3A53.0%29+Gecko%2F20100101+Firefox%2F53.0%22%3Bs%3A13%3A%22last_activity%22%3Bi%3A1495524592%3Bs%3A9%3A%22user_data%22%3Bs%3A0%3A%22%22%3B%7D7b8968426a86b262723d2c61b0e573cf',
   'HTTP_CONNECTION' => 'keep-alive',
   'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\User\\AppData\\Roaming\\npm;C:\\Program Files (x86)\\Microsoft VS Code\\bin',
   'SystemRoot' => 'C:\\Windows',
   'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe',
   'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC',
   'WINDIR' => 'C:\\Windows',
-  'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at tintucs.com Port 80</address>
+  'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
 ',
   'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28',
-  'SERVER_NAME' => 'tintucs.com',
-  'SERVER_ADDR' => '127.0.0.1',
+  'SERVER_NAME' => 'localhost',
+  'SERVER_ADDR' => '::1',
   'SERVER_PORT' => '80',
-  'REMOTE_ADDR' => '127.0.0.1',
+  'REMOTE_ADDR' => '::1',
   'DOCUMENT_ROOT' => 'E:/xampp/htdocs/thanhxuan',
   'REQUEST_SCHEME' => 'http',
   'CONTEXT_PREFIX' => '',
   'CONTEXT_DOCUMENT_ROOT' => 'E:/xampp/htdocs/thanhxuan',
   'SERVER_ADMIN' => 'postmaster@localhost',
   'SCRIPT_FILENAME' => 'E:/xampp/htdocs/thanhxuan/index.php',
-  'REMOTE_PORT' => '55402',
-  'REDIRECT_URL' => '/connect.facebook.net/en_US/all.js',
+  'REMOTE_PORT' => '65256',
+  'REDIRECT_URL' => '/favicon.ico',
   'GATEWAY_INTERFACE' => 'CGI/1.1',
   'SERVER_PROTOCOL' => 'HTTP/1.1',
   'REQUEST_METHOD' => 'GET',
   'QUERY_STRING' => '',
-  'REQUEST_URI' => '/connect.facebook.net/en_US/all.js',
+  'REQUEST_URI' => '/favicon.ico',
   'SCRIPT_NAME' => '/index.php',
-  'PATH_INFO' => '/connect.facebook.net/en_US/all.js',
-  'PATH_TRANSLATED' => 'redirect:\\index.php\\connect.facebook.net\\en_US\\all.js\\en_US\\all.js',
-  'PHP_SELF' => '/index.php/connect.facebook.net/en_US/all.js',
-  'REQUEST_TIME_FLOAT' => 1495446796.9849999,
-  'REQUEST_TIME' => 1495446796,
+  'PATH_INFO' => '/favicon.ico',
+  'PATH_TRANSLATED' => 'redirect:\\index.php\\favicon.ico',
+  'PHP_SELF' => '/index.php/favicon.ico',
+  'REQUEST_TIME_FLOAT' => 1495524592.6159999,
+  'REQUEST_TIME' => 1495524592,
 )
->>> END ERROR at 2017-05-22 16:53:17 <<<
+>>> END ERROR at 2017-05-23 14:29:52 <<<

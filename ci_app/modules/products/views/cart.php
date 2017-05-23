@@ -1,7 +1,6 @@
 
      <?php   $lang = get_language();
-        if ($this->cart->total_items() != 0):
-            ?>
+        if ($this->cart->total_items() != 0):     ?>
 
 <div style="clear:both; display:block; height:40px"></div>
                     <h2>Shopping Cart &nbsp;<small>Your shopping cart</small></h2>
@@ -41,72 +40,34 @@
                         
                       </tr>
 
-                  <?php endforeach; ?>   
-                  <tfoot>
-                        <tr>       
-                    <td colspan="4">
-                        <?php echo __('IP_total'); ?>:
-                    </td>
-                    <td class="total_price"><?php echo get_price_in_vnd($this->cart->total()) . ' ₫'; ?> </td>
-                </tr>
-                <?php if($lang == 'vi'){ ?>
-                <tr>
-                    <td colspan="5" style="text-align: right;" class="total_price"><?php echo DocTienBangChu($this->cart->total()); ?> </td>
-                </tr>
-                <?php } ?>
-            </tfoot>                  
+                  <?php endforeach; ?>                              
                     </table>
 
                     <div class="contentbox">
-                    <div class="cartoptionbox one-half first">
-                    <h4> Choose if you have a discount code or reward points you want to use or would like to estimate your delivery cost. </h4>
-                    <input type="radio" class="radio">
-                    <span>Use Coupon Code</span> <br>
-                    <input type="radio" class="radio">
-                    <span>Use Gift Voucher</span> <br>
-                    <input type="radio" class="radio" checked="checked">
-                    <span>Estimate Shipping &amp; Taxes</span> <br><br>
-                    <form action="#" class="ship">
-                      <h4> Enter your destination to get a shipping estimate.</h4>
-                      <fieldset>
-                        <div class="control-group">
-                          <label>Select list</label>
-                            <select  class="span3 cartcountry">
-                              <option>Country:</option>
-                              <option>Philippines</option>
-                              <option>United States</option>
-                            </select>
-                            <select class="span3 cartstate">
-                              <option>Region / State:</option>
-                              <option>Manila</option>
-                              <option>Los Angeles</option>
-                            </select>
-                            <input type="submit" value="Submit" class="submit">
-                        </div>
-                      </fieldset>
-                    </form>
-                  </div><!--cartoptionbox-->
+                    <div class="cartoptionbox one-half first">                 
+                                      
+                    </div><!--cartoptionbox-->
                     <div class="alltotal one-half">
                     <table class="alltotal">
                       <tr>
-                        <td><span class="extra">Sub-Total :</span></td>
-                        <td><span>$101.0</span></td>
+                        <td><span class="extra">  <?php echo __('IP_total'); ?> :</span></td>
+                        <td><span><?php echo get_price_in_vnd($this->cart->total()) . ' ₫'; ?></span></td>
                       </tr>
                       <tr>
-                        <td><span class="extra">Eco Tax (-2.00) :</span></td>
-                        <td><span>$11.0</span></td>
+                        <td colspan="2">  <?php if($lang == 'vi'){ ?>
+                         <?php echo DocTienBangChu($this->cart->total()); ?>              
+                        <?php } ?></td>
                       </tr>
                       <tr>
-                        <td><span class="extra">VAT (18.2%) :</span></td>
-                        <td><span>$21.0</span></td>
+                        <td><span class="extra">Mã giảm giá :</span></td>
+                        <td><span><input type="text" class="text" name="coupon_code" > </span></td>
                       </tr>
-                      <tr>
-                        <td><span class="extra grandtotal">Total :</span></td>
-                        <td><span class="grandtotal">$150.28</span></td>
-                      </tr>
+                      
                     </table>
-                    <input type="submit" value="Continue Shopping">
-                    <input type="submit" value="CheckOut">
+                    <a href="/san-pham" class="btn btn-primary one" title="Thêm sản phẩm">Thêm sản phẩm</a>
+                    <?php if ($this->cart->total_items() != 0){ ?>
+                        <a href="/thong-tin-khach-hang" class="btn btn-success one" title="Thanh toán">Thanh toán</a>
+                    <?php } ?>
                   </div><!--end:alltotal-->
                   </div><!--end:contentbox-->
                   <div style="clear:both; display:block; height:40px"></div>
@@ -114,3 +75,5 @@
             <?php $this->load->view('common/message'); ?>
             <h4 class="alert green_alert"><?php echo __('IP_cart_shopping_empty'); ?></h4>
 <?php endif; ?>
+
+     
